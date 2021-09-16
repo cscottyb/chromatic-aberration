@@ -1,0 +1,15 @@
+{
+  "name": "chromatic-aberration",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "chromatic-aberration",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/cscottyb/chromatic-aberration",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

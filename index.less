@@ -1,0 +1,218 @@
+@import "./styles/base.less";
+
+span.syntax--punctuation.syntax--definition.syntax--tag.syntax--begin.syntax--html, .syntax--punctuation.syntax--definition.syntax--tag.syntax--end.syntax--html{
+  color: @gray;
+}
+span.syntax--comment span.syntax--markup.syntax--underline.syntax--link.syntax--hyperlink{
+  color:@gray;
+}
+
+//CSS
+
+
+span.syntax--meta.syntax--toc-list.syntax--id.syntax--html{
+  color:@yellow;
+}
+
+span.syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--css{
+  color:@yellow;
+}
+
+span.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css{
+  color:@green;
+}
+
+span.syntax--class span.syntax--string.syntax--quoted.syntax--double.syntax--html{
+  color:@green;
+}
+
+span.syntax--punctuation.syntax--separator.syntax--key-value.syntax--html,
+span.syntax--punctuation.syntax--definition.syntax--string.syntax--html{
+  color:@gray;
+}
+span.syntax--string.syntax--quoted.syntax--double.syntax--html{
+  color:@light-gray;
+}
+
+span.syntax--meta.syntax--definition.syntax--variable.syntax--scss {
+    color: #ffffff;
+    font-weight: normal;
+}
+
+span.syntax--support.syntax--type.syntax--property-name.syntax--css {
+    color: @gray;
+    //#93a9eb;
+}
+
+span.syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-class.syntax--css{
+  color: @teal !important;
+}
+
+//scss
+span.syntax--support.syntax--function.syntax--misc.syntax--scss{
+  color: @pink;
+}
+
+//less
+
+span.syntax--punctuation.syntax--definition.syntax--variable.syntax--less{
+  color: @gray;
+}
+
+//JS
+
+span.syntax--entity.syntax--name.syntax--tag.syntax--script.syntax--html{
+  color: @red;
+}
+.syntax--string.syntax--begin.syntax--js,
+.syntax--string.syntax--end.syntax--js,
+.syntax--meta.syntax--delimiter.syntax--method.syntax--period.syntax--js {
+    color: @gray;
+}
+span.syntax--entity.syntax--name.syntax--function.syntax--js {
+    color: @pink;
+}
+
+span.syntax--support.syntax--function.syntax--dom.syntax--js {
+    color: @blue;
+}
+span.syntax--support.syntax--function.syntax--js {
+    color: @blue;
+}
+
+span.syntax--storage.syntax--type.syntax--function.syntax--js {
+    color: @yellow;
+}
+span.syntax--meta.syntax--brace.syntax--curly.syntax--js {
+  color: @gray;
+}
+
+span.syntax--js span.syntax--support.syntax--function{
+    color:@blue;
+}
+span.syntax--variable.syntax--other.syntax--object.syntax--property.syntax--unquoted{
+  color:@green;
+}
+span.syntax--storage.syntax--type.syntax--function {
+    color: @yellow;
+}
+span.syntax--js span.syntax--entity.syntax--name.syntax--function{
+  color: @green;
+}
+span.syntax--js span.syntax--keyword.syntax--control{
+  color: @blue;
+}
+atom-text-editor.editor .syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--json{
+  color:@green;
+}
+span.syntax--punctuation.syntax--definition.syntax--string.syntax--json {
+    color: @gray !important;
+}
+
+// Pug
+span.syntax--entity.syntax--other.syntax--attribute-name.syntax--id.syntax--pug {
+    color: @yellow;
+}
+
+span.syntax--pug span.syntax--constant.syntax--language.syntax--js {
+    color: @green;
+}
+span.syntax--constant.syntax--name.syntax--attribute.syntax--tag.syntax--pug {
+    color: @gray;
+}
+atom-text-editor.editor .syntax--source.syntax--json .syntax--meta.syntax--structure.syntax--dictionary.syntax--json span .syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--json{
+  color: @green;
+}
+
+
+body {
+    color: @gray;
+}
+
+body > p, body > div.update-preview > p {
+    color: @gray !important;
+}
+
+.update-preview a{
+  color:#7a7fff;
+}
+
+.update-preview pre.editor-colors {
+    background: #7a7fff21 !important;
+    background-color: #7a7fff21 !important;
+    // margin-bottom: 1.5em;
+}
+
+code {
+    // background-color: #0dbf9b1a !important;
+    // background-color: @dark-gray !important;
+    // color: @dark-gray !important;
+    color: #7a7fff;
+    background-color: #7a7fff21;
+
+}
+strong{
+  color: @light-gray !important;
+}
+.update-preview {
+    max-width: 768px;
+    margin: auto;
+}
+h1, h2, h3, h4, h5, h5 {
+    margin-top: 0em;
+    color:@smoke;
+}
+
+h2 {
+    border-bottom: solid 2px @smoke;
+    padding-bottom: 5px;
+    padding-top: 3em;
+}
+h3{
+  padding-top: 2em;
+}
+
+h2:first-child h3{
+  margin-top: 0em;
+}
+
+hr {
+    margin: 6em 0;
+}
+a:link{
+  color: #7a7fff;
+}
+
+.update-preview ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.update-preview ul li::before {
+  content: "\2022";
+// color: #a272fb;
+color: @gray;
+font-weight: bold;
+width: 1em;
+left: -1em;
+position: relative;
+}
+.update-preview ol { counter-reset: item; }
+.update-preview ol li { display: block; }
+.update-preview ol li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: @gray;
+    margin-left:-1em;
+    position:relative;
+}
+.update-preview p,
+.update-preview li,
+.update-preview pre {
+    font-size: 1.3rem !important;
+    color: @gray;
+}
+
+// json
+span.syntax--string.syntax--quoted.syntax--double.syntax--dictionary.syntax--key.syntax--json {
+    color: @purple;
+}
