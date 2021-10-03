@@ -1,4 +1,4 @@
-# chromatic-abberation
+# Euclid
 
 Atom Theme
 
